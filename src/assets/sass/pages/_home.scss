@@ -1,0 +1,100 @@
+.hero {
+  background-color: $grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    width: 39rem;
+    height: 44.8rem;
+  }
+  &__section {
+    width: 34rem;
+
+    &-heading {
+      font-weight: 700;
+      font-size: 3.3rem;
+      line-height: 3.4rem;
+      margin-top: 3rem;
+    }
+    &-txt {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-top: 3rem;
+    }
+    &-btn {
+      color: $white;
+      background-color: $black;
+      border: none;
+      border-radius: 6.2rem;
+      padding: 1rem 5rem;
+      font-size: 1.6rem;
+      line-height: 21px;
+      width: 100%;
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+  }
+  &__statistics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  &__statistic {
+    display: flex;
+    flex-direction: column;
+    &-number {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 32.4px;
+    }
+    &-txt {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 22px;
+      color: #00000099;
+    }
+  }
+  &__statistic:last-child {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 61.9375em) {
+  .hero {
+    gap: 15rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .hero {
+    gap: 10rem;
+    &__img {
+      width: 50rem;
+    }
+    &__section {
+      width: 60rem;
+
+      &-heading {
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+      }
+      &-txt {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+      }
+      &-btn {
+        width: 210px;
+      }
+    }
+  }
+}
