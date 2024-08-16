@@ -1,0 +1,22 @@
+.star__rating {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  &-stars {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    color: $yellow;
+  }
+  &-number {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: $yellow;
+  }
+  &-price {
+    font-size: 3rem;
+    margin: 0;
+    color: #333;
+  }
+}

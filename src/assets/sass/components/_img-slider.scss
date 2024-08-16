@@ -1,0 +1,49 @@
+.companies {
+  overflow: hidden;
+  background-color: $black;
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &-img {
+      width: 12rem;
+      height: auto;
+      padding: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 61.9375em) {
+  .companies {
+    overflow: hidden;
+    &__slider {
+      gap: 5rem;
+      background-color: $black;
+      &-img {
+        width: 14rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 90em) {
+  .companies {
+    &__slider {
+      gap: 14rem;
+      animation: slideRightAndBack 50s linear infinite;
+    }
+  }
+}
+
+@keyframes slideRightAndBack {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

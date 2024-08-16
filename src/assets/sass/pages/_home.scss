@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
   &__img {
     width: 39rem;
     height: 44.8rem;
@@ -63,7 +64,85 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+.new {
+  margin-top: 2rem;
+  overflow-x: hidden;
+}
+
+.products {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  margin-top: 2rem;
+  &__container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__card {
+    width: 20rem;
+    margin-left: 2rem;
+  }
+  &__card-img {
+    width: 23rem;
+    height: 25rem;
+    border-radius: 2rem;
+  }
+
+  &__card-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+  }
+}
+
+.price {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  &-current {
+    color: $black;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+  &-old {
+    color: $black;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    text-decoration: line-through;
+    color: #00000066;
+  }
+  &-sale {
+    color: $red;
+    background-color: #ff33331a;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+  }
+}
+.view__btn {
+  padding: 1rem 3rem;
+  background-color: $white;
+  border: 1px solid $grey;
+  border-radius: 3rem;
+  width: 90%;
+  margin: 1rem;
+  &-container {
+    overflow-x: hidden;
+    text-align: center;
+  }
+}
+// 31.25em 500px
+
+@media only screen and (min-width: 31.25em) {
+  .products{
+    justify-content: center;
+    align-items: center;
+  }
+}
+// 768px
+@media only screen and (min-width: 48em) {
   .hero {
     flex-direction: row;
   }
@@ -72,6 +151,12 @@
 @media only screen and (min-width: 61.9375em) {
   .hero {
     gap: 15rem;
+  }
+  .products{
+    flex-direction: row;
+  }
+  .view__btn {
+    width: 20rem;
   }
 }
 @media only screen and (min-width: 90em) {
@@ -95,6 +180,12 @@
       &-btn {
         width: 210px;
       }
+    }
+  }
+  .products{
+    gap: 10rem;
+    &__container{
+      gap: 10rem;
     }
   }
 }
