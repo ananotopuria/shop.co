@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/shopping-bag.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../../css/style.css" />
+    <script type="module" src="./../js/ditails.js"></script>
+    <title>Shop.co</title>
+  </head>
+  <body>
+    <div class="sign-up">
+      <p class="sign-up__text">
+        Sign up and get 20% off to your first order.
+        <a class="sign-up__link" href="#">Sign Up Now</a>
+      </p>
+      <ion-icon class="close__btn" name="close-outline"></ion-icon>
+    </div>
+    <header class="header">
+      <a class="header__logo" href="#">SHOP.CO</a>
+      <nav class="main__navigation">
+        <ul class="main__navigation-list">
+          <li>
+            <a href="#" class="main__navigation-link">Shop</a>
+          </li>
+          <li>
+            <a href="#" class="main__navigation-link">On Sale</a>
+          </li>
+          <li>
+            <a href="#" class="main__navigation-link">New Arrivals</a>
+          </li>
+          <li>
+            <a href="#" class="main__navigation-link">Brands</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__search-container">
+        <button class="search-button">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <input
+          type="text"
+          placeholder="Search for products..."
+          class="search-input"
+        />
+      </div>
+      <a href="#" class="header__search">
+        <ion-icon name="search-outline"></ion-icon
+      ></a>
+      <a href="#" class="header__cart"
+        ><ion-icon name="cart-outline"></ion-icon
+      ></a>
+      <a href="#" class="header__user"
+        ><ion-icon name="person-circle-outline"></ion-icon
+      ></a>
+      <div class="header-container">
+        <div class="navigation hidden burger-menu-btn">
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+          <div class="navigation__background">&nbsp;</div>
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li>
+                <a href="#" class="main__navigation-link">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="main__navigation-link">On Sale</a>
+              </li>
+              <li>
+                <a href="#" class="main__navigation-link">New Arrivals</a>
+              </li>
+              <li>
+                <a href="#" class="main__navigation-link">Brands</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="line"></div>
+        <div class="path">
+          <p>
+            Home
+            <ion-icon
+              class="path-icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+            Cart
+          </p>
+        </div>
+      </section>
+      <section class="cart">
+        <h2 class="cart__heading">Your cart</h2>
+        <div class="cart__container"><p class="cart__txt">your cart is empty</p></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="subscribe">
+        <div class="subscribe__container">
+          <h2 class="subscribe__txt">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+          <div>
+            <div class="subscribe__input-container">
+              <div class="subscribe-input">
+                <ion-icon class="subscribe-icon" name="mail-outline"></ion-icon>
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  class="subscribe-input"
+                />
+              </div>
+            </div>
+            <button class="subscribe-btn">Subscribe to Newsletter</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content">
+        <div>
+          <div class="footer__container">
+            <a class="header__logo" href="#">SHOP.CO</a>
+            <p class="footer__txt">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <div>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="footer__links-container">
+          <div>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">COMPANY</a></li>
+              <li><a class="footer__link" href="#">About</a></li>
+              <li><a class="footer__link" href="#">Features</a></li>
+              <li><a class="footer__link" href="#">Works</a></li>
+              <li><a class="footer__link" href="#">Career</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">HELP</a></li>
+              <li><a class="footer__link" href="#">Customer Support</a></li>
+              <li><a class="footer__link" href="#">Delivery Details</a></li>
+              <li><a class="footer__link" href="#">Terms & Conditions</a></li>
+              <li><a class="footer__link" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__links-container">
+          <div>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">FAQ</a></li>
+              <li><a class="footer__link" href="#">Account</a></li>
+              <li><a class="footer__link" href="#">Manage Deliveries</a></li>
+              <li><a class="footer__link" href="#">Orders</a></li>
+              <li><a class="footer__link" href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">RESOURCES</a></li>
+              <li><a class="footer__link" href="#">Free eBooks</a></li>
+              <li><a class="footer__link" href="#">Development Tutorial</a></li>
+              <li><a class="footer__link" href="#">How to - blog</a></li>
+              <li><a class="footer__link" href="#">Youtube Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-footer">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div>
+          <img src="../assets/images/visa.svg" alt="visa" />
+          <img src="../assets/images/mastercard.svg" alt="mastercard" />
+          <img src="../assets/images/paypal.svg" alt="paypal" />
+          <img src="../assets/images/apple-pay.svg" alt="applepay" />
+          <img src="../assets/images/google-pay.svg" alt="googlepay" />
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

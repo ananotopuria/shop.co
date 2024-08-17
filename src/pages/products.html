@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/shopping-bag.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../../css/style.css" />
+    <script type="module" src="./../js/ditails.js"></script>
+    <title>Shop.co</title>
+  </head>
+  <body>
+    <div class="sign-up">
+      <p class="sign-up__text">
+        Sign up and get 20% off to your first order.
+        <a class="sign-up__link" href="#">Sign Up Now</a>
+      </p>
+      <ion-icon class="close__btn" name="close-outline"></ion-icon>
+    </div>
+    <header class="header">
+      <a class="header__logo" href="#">SHOP.CO</a>
+      <nav class="main__navigation">
+        <ul class="main__navigation-list">
+          <li>
+            <a href="#" class="main__navigation-link">Shop</a>
+          </li>
+          <li>
+            <a href="./cart.html" class="main__navigation-link">On Sale</a>
+          </li>
+          <li>
+            <a href="#" class="main__navigation-link">New Arrivals</a>
+          </li>
+          <li>
+            <a href="#" class="main__navigation-link">Brands</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__search-container">
+        <button class="search-button">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <input
+          type="text"
+          placeholder="Search for products..."
+          class="search-input"
+        />
+      </div>
+      <a href="#" class="header__search">
+        <ion-icon name="search-outline"></ion-icon
+      ></a>
+      <a href="#" class="header__cart"
+        ><ion-icon name="cart-outline"></ion-icon
+      ></a>
+      <a href="#" class="header__user"
+        ><ion-icon name="person-circle-outline"></ion-icon
+      ></a>
+      <div class="header-container">
+        <div class="navigation hidden burger-menu-btn">
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+          <div class="navigation__background">&nbsp;</div>
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li>
+                <a href="#" class="main__navigation-link">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="main__navigation-link">On Sale</a>
+              </li>
+              <li>
+                <a href="#" class="main__navigation-link">New Arrivals</a>
+              </li>
+              <li>
+                <a href="#" class="main__navigation-link">Brands</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="line"></div>
+        <div class="path">
+          <p>
+            Home
+            <ion-icon
+              class="path-icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+            Shop
+          </p>
+        </div>
+        <div class="details">
+          <div class="details__gallery">
+            <img
+              class="details__image-main"
+              src="./../assets/images/image 1.png"
+              alt="tshirt"
+            />
+            <div class="details__collection">
+              <img
+                class="details__image-gallery"
+                src="./../assets/images/image 2.png"
+                alt="tshirt"
+              />
+              <img
+                class="details__image-gallery"
+                src="./../assets/images/image 5.png"
+                alt="tshirt"
+              />
+              <img
+                class="details__image-gallery"
+                src="./../assets/images/image 6.png"
+                alt="tshirt"
+              />
+            </div>
+          </div>
+          <div class="ditails__container">
+            <h3 class="tertiary__header">One Life Graphic T-shirt</h3>
+            <div class="star__rating">
+              <span class="star__rating-stars">★★★★☆</span>
+              <p class="star__rating-numbers">4/5</p>
+            </div>
+            <p class="price">
+              <span class="price-current">$260</span>
+              <span class="price-old">$300</span>
+              <span class="price-sale">-40%</span>
+            </p>
+            <p class="description">
+              This graphic t-shirt which is perfect for any occasion. Crafted
+              from a soft and breathable fabric, it offers superior comfort and
+              style.
+            </p>
+            <div class="line"></div>
+            <div class="colors__container">
+              <p class="colors">Select colors</p>
+              <div class="circles">
+                <label class="circle circle1">
+                  <input type="radio" name="color" value="color1" />
+                  <span class="circle1"></span>
+                </label>
+                <label class="circle circle1">
+                  <input type="radio" name="color" value="color2" />
+                  <span class="circle2"></span>
+                </label>
+                <label class="circle circle2">
+                  <input type="radio" name="color" value="color3" />
+                  <span class="circle3"></span>
+                </label>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="size">
+              <p class="size__txt">choose size</p>
+              <div class="size__btns">
+                <button class="size__btn">Small</button>
+                <button class="size__btn">Medium</button>
+                <button class="size__btn">Large</button>
+                <button class="size__btn">X-large</button>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="cart__container">
+              <div class="quantity">
+                <ion-icon name="add-outline"></ion-icon> 1
+                <ion-icon name="remove-outline"></ion-icon>
+              </div>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="reviews">
+          <div class="reviews__tab-container">
+            <button class="btn reviews__tab reviews__tab--1" data-tab="1">
+              Product Details
+            </button>
+            <button
+              class="btn reviews__tab reviews__tab--2 reviews__tab--active"
+              data-tab="2"
+            >
+              Rating & Reviews
+            </button>
+            <button class="btn reviews__tab reviews__tab--3" data-tab="3">
+              FAQs
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="reviews__content reviews__content--1">
+            <p>
+              1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div
+            class="reviews__content reviews__content--2 reviews__content--active"
+          >
+            <div class="filter__container">
+              <p class="filter__txt">All Reviews(451)</p>
+              <div>
+                <ion-icon name="options-outline"></ion-icon>
+                <button class="latest-btn">Latest</button>
+                <button class="review-btn">Write a Review</button>
+              </div>
+            </div>
+            <div class="testimonials">
+              <div class="testimonial">
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="testimonial__name">Samantha D.</p>
+                <p class="testimonial__text">
+                  "I absolutely love this t-shirt! The design is unique and the
+                  fabric feels so comfortable. As a fellow designer, I
+                  appreciate the attention to detail. It's become my favorite
+                  go-to shirt."
+                </p>
+                <p class="testimonial__date">Posted on August 14, 2023</p>
+              </div>
+
+              <div class="testimonial">
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="testimonial__name">Alex M.</p>
+                <p class="testimonial__text">
+                  "The t-shirt exceeded my expectations! The colors are vibrant
+                  and the print quality is top-notch. Being a UI/UX designer
+                  myself, I'm quite picky about aesthetics, and this t-shirt
+                  definitely gets a thumbs up from me."
+                </p>
+                <p class="testimonial__date">Posted on August 15, 2023</p>
+              </div>
+
+              <div class="testimonial">
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="testimonial__name">Ethan R.</p>
+                <p class="testimonial__text">
+                  "This t-shirt is a must-have for anyone who appreciates good
+                  design. The minimalistic yet stylish pattern caught my eye,
+                  and the fit is perfect. I can see the designer's touch in
+                  every aspect of this shirt."
+                </p>
+                <p class="testimonial__date">Posted on August 16, 2023</p>
+              </div>
+
+              <div class="testimonial none">
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="testimonial__name">Olivia P.</p>
+                <p class="testimonial__text">
+                  "As a UI/UX enthusiast, I value simplicity and functionality.
+                  This t-shirt not only represents those principles but also
+                  feels great to wear. It's evident that the designer poured
+                  their creativity into making this t-shirt stand out."
+                </p>
+                <p class="testimonial__date">Posted on August 17, 2023</p>
+              </div>
+
+              <div class="testimonial none">
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="testimonial__name">Liam K.</p>
+                <p class="testimonial__text">
+                  "This t-shirt is a fusion of comfort and creativity. The
+                  fabric is soft, and the design speaks volumes about the
+                  designer's skill. It's like wearing a piece of art that
+                  reflects my passion for both design and fashion."
+                </p>
+                <p class="testimonial__date">Posted on August 18, 2023</p>
+              </div>
+
+              <div class="testimonial none">
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="testimonial__name">Ava H.</p>
+                <p class="testimonial__text">
+                  "I'm not just wearing a t-shirt; I'm wearing a piece of design
+                  philosophy. The intricate details and thoughtful layout of the
+                  design make this shirt a conversation starter."
+                </p>
+                <p class="testimonial__date">Posted on August 19, 2023</p>
+              </div>
+            </div>
+            <button class="testimonials__load-more">Load More Reviews</button>
+          </div>
+          <div class="reviews__content reviews__content--3">
+            <p>
+              3Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="secondary__heading">you might also like</h2>
+        <div class="products">
+          <div class="products__container">
+            <div class="products__card">
+              <img
+                class="products__card-img"
+                src="./../assets/images/Frame 32.png"
+                alt="Product Image"
+              />
+              <div class="products__card-info">
+                <h3 class="products__card-title">VERTICAL STRIPED SHIRT</h3>
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="price">
+                  <span class="price-current">$212</span
+                  ><span class="price-old">$232</span
+                  ><span class="price-sale">-20%</span>
+                </p>
+              </div>
+            </div>
+            <div class="products__card">
+              <img
+                class="products__card-img"
+                src="./../assets/images/image 8 (2).png"
+                alt="Product Image"
+              />
+              <div class="products__card-info">
+                <h3 class="products__card-title">COURAGE GRAPHIC T-SHIRT</h3>
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★☆☆</span>
+                  <p class="star__rating-numbers">3/5</p>
+                </div>
+                <p class="price">
+                  <span class="price-current">$145</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="products__container">
+            <div class="products__card none">
+              <img
+                class="products__card-img"
+                src="./../assets/images/image 9 (2).png"
+                alt="Product Image"
+              />
+              <div class="products__card-info">
+                <h3 class="products__card-title">LOOSE FIT BERMUDA SHORTS</h3>
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="price"><span class="price-current">$80</span></p>
+              </div>
+            </div>
+            <div class="products__card none">
+              <img
+                class="products__card-img"
+                src="./../assets/images/image 10 (2).png"
+                alt="Product Image"
+              />
+              <div class="products__card-info">
+                <h3 class="products__card-title">FADED SKINNY JEANS</h3>
+                <div class="star__rating">
+                  <span class="star__rating-stars">★★★★☆</span>
+                  <p class="star__rating-numbers">4/5</p>
+                </div>
+                <p class="price">
+                  <span class="price-current">$210</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="subscribe">
+        <div class="subscribe__container">
+          <h2 class="subscribe__txt">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+          <div>
+            <div class="subscribe__input-container">
+              <div class="subscribe-input">
+                <ion-icon class="subscribe-icon" name="mail-outline"></ion-icon>
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  class="subscribe-input"
+                />
+              </div>
+            </div>
+            <button class="subscribe-btn">Subscribe to Newsletter</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content">
+        <div>
+          <div class="footer__container">
+            <a class="header__logo" href="#">SHOP.CO</a>
+            <p class="footer__txt">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <div>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="footer__links-container">
+          <div>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">COMPANY</a></li>
+              <li><a class="footer__link" href="#">About</a></li>
+              <li><a class="footer__link" href="#">Features</a></li>
+              <li><a class="footer__link" href="#">Works</a></li>
+              <li><a class="footer__link" href="#">Career</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">HELP</a></li>
+              <li><a class="footer__link" href="#">Customer Support</a></li>
+              <li><a class="footer__link" href="#">Delivery Details</a></li>
+              <li><a class="footer__link" href="#">Terms & Conditions</a></li>
+              <li><a class="footer__link" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__links-container">
+          <div>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">FAQ</a></li>
+              <li><a class="footer__link" href="#">Account</a></li>
+              <li><a class="footer__link" href="#">Manage Deliveries</a></li>
+              <li><a class="footer__link" href="#">Orders</a></li>
+              <li><a class="footer__link" href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">RESOURCES</a></li>
+              <li><a class="footer__link" href="#">Free eBooks</a></li>
+              <li><a class="footer__link" href="#">Development Tutorial</a></li>
+              <li><a class="footer__link" href="#">How to - blog</a></li>
+              <li><a class="footer__link" href="#">Youtube Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-footer">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div>
+          <img src="../assets/images/visa.svg" alt="visa" />
+          <img src="../assets/images/mastercard.svg" alt="mastercard" />
+          <img src="../assets/images/paypal.svg" alt="paypal" />
+          <img src="../assets/images/apple-pay.svg" alt="applepay" />
+          <img src="../assets/images/google-pay.svg" alt="googlepay" />
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

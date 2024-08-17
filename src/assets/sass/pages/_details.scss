@@ -1,0 +1,171 @@
+.path {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 2rem 2rem;
+  color: $darkGrey;
+  &-icon {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $darkGrey;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-x: hidden;
+  margin: 2rem;
+  &__image {
+    &-main {
+      width: 35rem;
+    }
+    &-gallery {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  &__collection {
+    display: flex;
+    gap: 2rem;
+  }
+  &__gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+.colors__container {
+  padding: 2rem 0;
+}
+.circles {
+  display: flex;
+  gap: 1rem;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle input {
+  display: none;
+}
+
+.circle span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #000;
+}
+
+.circle1 {
+  border-radius: 50%;
+  background-color: $brown;
+}
+
+.circle2 {
+  border-radius: 50%;
+  background: $darkGreen;
+}
+
+.circle3 {
+  border-radius: 50%;
+  background: $darkBlue;
+}
+
+.circle input:checked + span {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.colors {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: $darkGrey;
+}
+.size {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+  &__txt {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $darkGrey;
+  }
+  &__btn {
+    font-size: 1.4rem;
+    border: none;
+    color: $darkGrey;
+    background-color: $grey;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    &s {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+  &__btn:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.cart__container {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.quantity {
+  background-color: $grey;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  width: 7rem;
+  height: 4rem;
+}
+
+.cart-btn {
+  color: $white;
+  background-color: $black;
+  border: none;
+  border-radius: 6.2rem;
+  padding: 1rem 5rem;
+  font-size: 1.6rem;
+  line-height: 21px;
+  width: 60%;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 60em) {
+  .details {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__gallery {
+      flex-direction: row-reverse;
+      
+    }
+    &__collection {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

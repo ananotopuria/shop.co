@@ -1,0 +1,133 @@
+.reviews__content {
+  padding: 2rem;
+  background-color: $white;
+}
+
+.reviews__tab-container {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__tab {
+  margin-right: 2.5rem;
+  transform: translateY(-50%);
+}
+
+.reviews__tab {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  border: none;
+  background-color: $white;
+  color: $darkGrey;
+  margin-top: 5rem;
+}
+
+.reviews__tab--active {
+  transform: translateY(-66%);
+  border-bottom: 1px solid $black;
+  color: $black;
+}
+
+.reviews__content {
+  display: none;
+  //   font-size: 1.7rem;
+  //   padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.reviews__content--active {
+  display: grid;
+  //   grid-template-columns: 7rem 1fr;
+  //   column-gap: 3rem;
+  //   row-gap: 0.5rem;
+}
+
+.filter__container {
+  display: flex;
+  justify-content: space-between;
+}
+.filter__txt {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+.latest-btn {
+  background-color: $grey;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+.review-btn {
+  background-color: $black;
+  color: $white;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.testimonial {
+  border: 1px solid $grey;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__name {
+    color: $black;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+  }
+  &__text {
+    color: $darkGrey;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  &__date {
+    color: $darkGrey;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+  }
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  &__load-more {
+    width: 22rem;
+    color: $black;
+    background-color: $white;
+    border: 1px solid $grey;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+  }
+}
+.none {
+  display: none;
+}
+
+@media only screen and (min-width: 60em) {
+  .reviews__content {
+    padding: 2rem 6rem;
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .none {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 62.5em) {
+  .reviews__content {
+    padding: 2rem 10rem;
+  }
+}

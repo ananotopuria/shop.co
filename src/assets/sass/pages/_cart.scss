@@ -1,0 +1,13 @@
+.cart {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30rem;
+  }
+  &__txt {
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 5.4rem;
+  }
+}
