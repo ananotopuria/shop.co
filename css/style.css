@@ -16,6 +16,24 @@ body {
   background-color: #fff;
 }
 
+@font-face {
+  font-family: "Integral";
+  src: url("/src/assets/fonts/integral/integral.woff2") format("woff2"), url("/src/assets/fonts/integral/integral.woff") format("woff"), url("/src/assets/fonts/integral/integral.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/src/assets/fonts/satoshi/satoshi.woff2") format("woff2"), url("/src/assets/fonts/satoshi/satoshi.woff") format("woff"), url("/src/assets/fonts/satoshi/satoshi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .secondary__heading {
   font-weight: 700;
   font-size: 3.2rem;
@@ -23,6 +41,13 @@ body {
   text-align: center;
   color: #000;
   text-transform: uppercase;
+}
+
+.header__logo,
+.hero__section-heading,
+.secondary__heading,
+.subscribe__txt {
+  font-family: "Integral", sans-serif;
 }
 
 .hidden {
@@ -907,7 +932,7 @@ body {
     gap: 15rem;
   }
   .subscribe__txt {
-    width: 40rem;
+    width: 50rem;
   }
 }
 @media only screen and (min-width: 90em) {
