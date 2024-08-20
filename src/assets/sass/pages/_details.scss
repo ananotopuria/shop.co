@@ -117,7 +117,7 @@
   }
 }
 
-.cart__container {
+.cart__container-add {
   margin: 2rem 0;
   display: flex;
   align-items: center;
@@ -146,6 +146,10 @@
   cursor: pointer;
 }
 
+.alike__product {
+  overflow-x: hidden;
+}
+
 @media only screen and (min-width: 60em) {
   .details {
     display: flex;
@@ -158,10 +162,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     &__gallery {
       flex-direction: row-reverse;
-      
     }
     &__collection {
       flex-direction: column;

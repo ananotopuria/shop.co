@@ -8,9 +8,10 @@
   &-content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    margin: 2rem;
   }
-
+  
   &__txt {
     font-weight: 400;
     font-size: 1.4rem;
@@ -23,6 +24,7 @@
     &-container {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       gap: 2rem;
     }
   }
@@ -46,12 +48,40 @@
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
+  color: $darkGrey;
 }
 .footer-line {
   width: 90%;
   height: 1px;
   color: #000;
   margin: 0 auto;
+}
+.pay__icons{
+  display: flex;
+
+}
+.social__icons{
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.social__icon{
+  border: 1px solid $darkGrey;
+  padding: 0.7rem;
+  border-radius: 50%;
+  background-color: $white;
+
+}
+.social__icon:hover{
+
+  background-color: $black;
+  color: $white;
+  
+
+}
+
+.footer__links li:first-child .footer__link {
+  color: $black;
 }
 
 @media only screen and (min-width: 61em) {
@@ -75,7 +105,7 @@
   }
   .footer-footer {
     padding: 4rem 4rem;
-
+  
     flex-direction: row;
   }
 }

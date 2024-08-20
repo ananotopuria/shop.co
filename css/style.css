@@ -714,7 +714,8 @@ body {
 .footer-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  margin: 2rem;
 }
 .footer__txt {
   font-weight: 400;
@@ -729,6 +730,7 @@ body {
 .footer__links-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 2rem;
 }
 .footer__links li {
@@ -749,6 +751,7 @@ body {
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .footer-line {
@@ -756,6 +759,31 @@ body {
   height: 1px;
   color: #000;
   margin: 0 auto;
+}
+
+.pay__icons {
+  display: flex;
+}
+
+.social__icons {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.social__icon {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 0.7rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.social__icon:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer__links li:first-child .footer__link {
+  color: #000;
 }
 
 @media only screen and (min-width: 61em) {
@@ -825,6 +853,7 @@ body {
   font-size: 1.4rem;
   line-height: 2rem;
   margin-top: 3rem;
+  color: rgba(0, 0, 0, 0.6);
 }
 .hero__section-btn {
   color: #fff;
@@ -1251,7 +1280,7 @@ body {
   color: #fff;
 }
 
-.cart__container {
+.cart__container-add {
   margin: 2rem 0;
   display: flex;
   align-items: center;
@@ -1278,6 +1307,10 @@ body {
   width: 60%;
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.alike__product {
+  overflow-x: hidden;
 }
 
 @media only screen and (min-width: 60em) {
